@@ -6,19 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "seed": "node seeds/seed.js"
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abright93/tech-blog.git"
+    "url": ""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/abright93/tech-blog/issues"
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   },
-  "homepage": "https://github.com/abright93/tech-blog#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
@@ -29,8 +29,5 @@
     "handlebars": "^4.7.7",
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.5"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.12"
   }
 }
